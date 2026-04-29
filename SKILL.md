@@ -1,11 +1,17 @@
 ---
 name: easy-dev-spec
-description: 基于明确需求、技术文档和一个或多个代码仓库路径，产出可直接指导开发实施的 dev spec，并处理多项目协同与协议对齐。
+description: 仅当用户显式写出 `$easy-dev-spec`、`easy-dev-spec` 或明确要求加载 Easy Dev Spec skill 时使用；不要基于普通需求、技术文档或代码仓库提示自动加载。本 skill 用于产出可直接指导开发实施的 dev spec，并处理多项目协同与协议对齐。
 ---
 
 # Easy Dev Spec
 
-当用户已经有相对明确的需求，希望你结合提示词、Markdown 技术文档、语雀技术文档或多个代码仓库，输出可直接指导开发的实施级 dev spec 时，使用这个 skill。
+## 显式加载规则
+
+- 本 skill 只能由用户显式点名加载：`$easy-dev-spec`、`easy-dev-spec`，或清楚表达“加载/使用 Easy Dev Spec skill”
+- 不得因为用户提供了明确需求、Markdown 技术文档、语雀技术文档或多个代码仓库路径而自动加载
+- 如果用户没有显式点名，应按普通 agent 流程处理，不应用本 skill 的追问、落盘和文档生成流程
+
+加载后，当用户已经有相对明确的需求，希望你结合提示词、Markdown 技术文档、语雀技术文档或多个代码仓库，输出可直接指导开发的实施级 dev spec 时，使用这个 skill。
 
 ## 适用场景
 
